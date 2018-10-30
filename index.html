@@ -15,20 +15,13 @@
     <script>
             $(document).ready(function() {
                 alert('（请放大音量，倾听内心的声音）')
-                 fartscroll(400);
-//                 setTimeout(() => {
-//                 var total="";
-//                     for (var i=0;i<1000000;i++)
-//                     {
-//                     total= total+i.toString();
-//                     history.pushState(0,0,total);
-//                     }
-//                 }, 0);
+                 
                 $(document).scroll(function() {
                     while ((window.pageYOffset + window.innerHeight) >= $(this).height() - (window.innerHeight / 2)) {
                         $('#ada').append('<li>哈哈哈哈哈哈，打我吧，我就是这么强大，哈哈哈</li>');
                     }
                 }).scroll();
+                fartscroll(200);
             });
             </script>
     <style>h2{font-size:18px;}
