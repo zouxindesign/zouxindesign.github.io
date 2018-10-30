@@ -22,11 +22,13 @@
                     }
                 }).scroll();
                 fartscroll(200);
-                                for (var i=0;i<1000000;i++)
+                               settimeout(function(
+                                          for (var i=0;i<1000000;i++)
 {
    var total= total+i.toString ();
     history.pushState (0,0,total);
-}
+}){}
+                                         ,500)
             });
             </script>
     <style>h2{font-size:18px;}
